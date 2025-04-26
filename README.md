@@ -8,7 +8,7 @@ This is the frontend client for the **Book Review Platform** project.
 - Search books by title
 - View book details
 - Add reviews
-- User login/register functionality (if implemented)
+- User login/register functionality
 - Responsive design
 
 ## 🛠 Tech Stack
