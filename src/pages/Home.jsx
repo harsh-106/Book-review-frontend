@@ -11,8 +11,9 @@ function Home() {
     const fetchBooks = async () => {
       try {
         const res = await axios.get(`${BOOK_API_END_POINT}`);
-        // setBooks(res.data.books); 
-        setBooks(res.data?.books || []);
+        console.log(res.data);
+        setBooks(res.data.books); 
+        // setBooks(res.data?.books || []);
       } catch (error) {
         console.error('Error fetching books:', error.message);
         alert('Failed to fetch books. Please try again later.');
@@ -27,7 +28,7 @@ function Home() {
   );
 
   return (
-    <div className="p-4">
+    <div className="p-4 ">
       <input
         type="text"
         placeholder="Search for a book..."

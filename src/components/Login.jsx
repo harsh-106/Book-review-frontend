@@ -19,6 +19,7 @@ function Login() {
 
     try {
       const res = await axios.get(`${USER_API_END_POINT}`); 
+      console.log(res.data);
       const allUsers = res.data; 
       const user = allUsers.find((u) => u.email === email);
       if (!user) {

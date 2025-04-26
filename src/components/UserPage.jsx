@@ -19,7 +19,7 @@ function UserPage() {
   useEffect(() => {
     const fetchUserProfile = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/users/${id}`);
+        const res = await axios.get(`${USER_API_END_POINT}/${id}`);
         const data = res.data;
 
         setFetchedUser(data);
